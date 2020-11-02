@@ -79,7 +79,7 @@ a{
 main{
     margin: auto;
     width: 1110px;
-    height: 1000000px;
+    height: 4000px;
     margin-top: 90px;
 
 }
@@ -519,6 +519,300 @@ h5{
     color: #222222;
 }
 
+.sixthBlock{
+    width: inherit;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.button5{
+    width:272px;
+    height: 66px;
+    background-color: inherit;
+    border: 1px solid #D84727;
+    font-family: Taviraj;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 0.03em;
+  }
+a.seeMR{
+    color: #D84727;
+}
+.liine{
+    width: 391px;
+    height: 0px;
+    border: 0.3px solid #999999;    
+}
+.seventhBlock{
+    width: inherit;
+    height: 533px;
+    position: relative;
+    margin-top: 120px;
+}
+
+.testimonImg{
+    position: absolute; 
+    left: 0;
+    top: 67px;
+    z-index: 2;   
+}
+div.testimonImg{
+    background-color: #F1DDC9;
+    position: absolute;
+    left: -190px;
+    height: 300px;
+    width: 515px;
+    top: -2px;
+}
+.testimonDesc{
+    height: 322px;
+    position: absolute;   
+    left: 615px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.recense{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+    letter-spacing: 0.03em;
+    color: #333333;
+}
+.Influencer{
+    font-family: Taviraj;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.03em;
+    color: #777777;
+}
+h1{
+    border-bottom: 1px solid #000000;
+}
+.arrowBox{
+    width: 117px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 430px;
+    position: absolute;
+}
+footer{
+    width: 100%;
+    background-color: #D84727;
+    height: 700px;
+    margin-top: 100px;    
+}
+.iconBox{
+    width: 900px;
+    height: 210px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 10px;
+}
+.contactBox{
+    width: 1110px;
+    height: 301px;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:auto;
+    margin-top: 74px;
+}
+.contact1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 301px;
+}
+.contact1 h2{
+    font-family: Taviraj;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.places{
+    font-family: Taviraj;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;    
+}
+.days{
+    font-family: Taviraj;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.contact2{
+    height: 241px;
+    width: 255px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.contact2 h1{
+    color: white;
+
+    border: none;
+    font-family: Taviraj;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 41px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.numAdres{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 162px;
+    width: 97px;
+}
+.numAdres h3{    
+    font-family: Taviraj;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    /* or 140% */
+    letter-spacing: 0.02em;
+    color: #FFFFFF
+}
+.numbers{
+    width: 122px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.numbers span{
+    font-family: Taviraj;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.cont2Box{
+    width: 252px;
+    height: 159px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.networksPic{
+    width: 203px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 241px;
+    width: 185px;
+}
+.contact3 h1{
+    color: white;
+    border: none;
+    border: none;
+    font-family: Taviraj;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 41px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+
+}
+.linkBox{
+    width: 185px;
+    height: 224px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.linkBox a{
+    font-family: Taviraj;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    /* or 200% */
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.contact4{
+    width:167px ;
+    height: 241px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.contact4 h1{
+    border: none;
+    font-family: Taviraj;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 41px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.campaignBox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 167px;
+    width: 224px;
+}
+.campaignBox a{
+    color: white;
+    font-family: Taviraj;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    /* or 200% */
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
 @font-face{
     font-family: "Taviraj";
     src: url(/home/nikita/Project1/Front/fonts/Taviraj-Regular.ttf);
