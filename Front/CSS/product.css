@@ -1,143 +1,662 @@
-*{
-    margin: 0 0;
-    padding: 0 0;
+* {
+  margin: 0 0;
+  padding: 0 0;
 }
-body{
-    background-color: #F7F6F4;
-}
-
-header{
-    width: 100%;
-    height: 88px;
+body {
+  background-color: #f7f6f4;
 }
 
-.headBlock{
-    height: inherit;
-    width: 1110px;
-    margin: auto;
+header {
+  width: 100%;
+  height: 88px;
+}
+
+.headBlock {
+  height: inherit;
+  width: 1110px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.atoa {
+  width: 178px;
+  height: 22px;
+}
+a {
+  text-decoration: none;
+}
+
+.headText {
+  font-family: Taviraj;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+
+.headLinks {
+  width: 445px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.loginLinks {
+  width: 17.28px;
+  height: 21.13px;
+}
+.loginLinks1 {
+  font-family: Taviraj;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+.loginBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 88px;
+}
+
+.package {
+  width: 46px;
+  height: 46px;
+  background-image: url(../pictures/Ellipse\ 2.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 1110px;
+  margin: auto;
+  min-height: 100px;
+  position: relative;
+  margin-top: 30px;
+}
+.path {
+  font-family: Taviraj;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+.contentViewBlock {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+    height: 550px;
+    margin-top: 45px;
+    width: 100%;
+    position: relative;
+}
+.contentViewBlock::before{
+    content: "" ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #F1DDC9;
+    left: -65%;
+    top: 0;
+
+}
+.section1 {
+  display: grid;
+  grid-template-columns: 110px 352px;
+  grid-template-rows: repeat(4, 110px);
+  row-gap: 24px;
+  column-gap: 47px;
+  margin-right: 50px;
+  z-index: 2;
 }
 
-.atoa{
-    width: 178px;
-    height: 22px;
-
-}
-a{
-    text-decoration: none;
+.mainWatch {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
 }
 
-.headText{
+.section2 { 
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+  height: 90%;
+}
+.watchnameText {
+  font-family: Taviraj;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 80px;
+  /* or 133% */
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+.watchDescription {
+  font-family: Taviraj;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 80px;
+  /* or 133% */
+  letter-spacing: 0.02em;
+  color: #333333;
+  height: 160px;
+  width: 413px;
+}
+.prevPrice {
+  font-family: Taviraj;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  letter-spacing: 0.02em;
+  color: #777777;
+  text-decoration: line-through;
+}
+.newPrice {
+  font-family: Taviraj;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 41px;
+  /* identical to box height */
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+.choice {
+    font-family: Taviraj;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    color: #333333;
+}
+.colourChoose{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 90px;
+    width: 150px;
+}
+.colours{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 126px;
+    height: 55px;
+}
+.oderMaking{
+    width: 500px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sign1{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #777777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.sign2{
+    width: 30px;
+    height: 30px;
+    background-color: #D84727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signBox{
+    width: 113px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.orderButtonBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+    width: 364px;
+}
+.orderButton1{
+    width: 208px;
+    height: 62px;
+    background-color: #D84727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: Taviraj;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 34px;
     letter-spacing: 0.02em;
-    color: #333333;
+    color: #FFFFFF;
 }
-
-.headLinks{
-    width: 445px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.loginLinks{
-    width: 17.28px;
-    height: 21.13px;
-}
-.loginLinks1{
-    font-family: Taviraj;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 31px;
-    letter-spacing: 0.02em;
-    color: #333333;
-}
-.loginBox{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 88px;
-
-}
-
-.package{
-    width: 46px;
-    height: 46px;
-    background-image: url(../pictures/Ellipse\ 2.png);
+.orderButton2{
+    width: 140px;
+    height: 62px;
+    border: 1px solid  #D84727 ;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.path{
-    font-family: Taviraj;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 27px;
-    letter-spacing: 0.02em;
-    color: #333333;
+.cart{
+    margin-right: 17px;
+}
+.preinfoBlock{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #999999;
+  margin-top: 76px;   
+}
+.info{
+  font-family: Taviraj,sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  /* identical to box height, or 160% */
+  letter-spacing: 0.02em;
+  color: #999999;
+}
+.textSection{
+  height: 816px;
+  margin-top: 24px;
+}
+.textHeader{
+  font-family: Taviraj,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  letter-spacing: 0.02em;
+  color: #333333;
+  margin-bottom: 8px;
+}
+.text{
+  font-family: Nunito, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-bottom: 24px;
+}
+.pictureBlock{
+  height: 520px;
+}
+.watchSchema{
+  width: 635px;
+  height: 518px;
+  margin: auto;
+  background-image: url(/Front/pictures/image\ 40\ \(1\).png);
+}
+.relateProductBox{
+  margin-top: 120px;
+}
+.relateText{
+  font-family: Taviraj,sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  /* identical to box height, or 111% */
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+.productBlock{
+  margin-top: 62px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 403px;
+  column-gap: 30px;
+}
+.productBox{
+  background-color: #FFFFFF;
+  padding-left:20px;
+  padding-right:14px ;
+}
+.productBox1{
+  position: relative;
+  background-color: #FFFFFF;
+  padding-left:20px;
+  padding-right:14px;
+}
+.productBox1::before{
+  content: "20% OFF";
+  position: absolute;
+  width: 103px;
+  height: 34px;
+  background-color: #D84727;
+  color: white;
+  bottom: 381px;
+  left: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Taviraj,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+}
+.productBox2{
+  position: relative;
+  background-color: #FFFFFF;
+  padding-left:20px;
+  padding-right:14px;
+}
+.productBox2::before{
+  content: "NEW";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 160px;
+  bottom: 381px;
+  width: 71px;
+  text-align: center;
+  height: 34px;
+  background-color: #01522D;
+  font-family: Taviraj,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  /* identical to box height, or 150% */
+  color: #FFFFFF;
+}
+.productName{
+  width: max-content;
+  height: max-content;
+  font-family: Taviraj,sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  color: #333333;
+  margin-left: 24px;
+  margin-top: 12px;
+}
+ .productImage{
+  display: block;
+  width: 100%;
+  margin-top: 46px;
+
+}
+ .previousProductPrice{
+  display: block;
+  margin-left: 24px;
+  font-family: Taviraj,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  color: #777777;
+  text-decoration: line-through;
+  margin-top: 12px;
+
+  }
+.productPrice{
+  font-family: Taviraj,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  margin-left: 24px;
+  /* identical to box height, or 133% */
+  color: #333333;
+}
+.productPrice1{
+  font-family: Taviraj,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  margin-left: 24px;
+  /* identical to box height, or 133% */
+  color: #333333;
+  margin-top: 12px;
+}
+footer{
+  width: 100%;
+  background-color: #D84727;
+  height: 700px;
+  margin-top: 100px;    
+}
+.iconBox{
+  width: 900px;
+  height: 210px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 10px;
+}
+.contactBox{
+  width: 1110px;
+  height: 301px;
+  background-color: inherit;
+  flex-direction: row;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin:auto;
+  margin-top: 74px;
+}
+.contact1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 301px;
+}
+.contact1 h2{
+  font-family: Taviraj;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+.places{
+  font-family: Taviraj;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;    
+}
+.days{
+  font-family: Taviraj;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
 }
 
-main{
-    width: 1111px;
-    height: 1000px;
-    background-color: inherit;
-    margin: auto;
-    margin-top: 20px;
-    box-sizing: border-box;
+.contact2{
+  height: 241px;
+  width: 255px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
-.firstBlock{
-    width: 1111px;
-    height:577px;
-}   
-.pathStyle{
-    color:#D84727;
-}
-.sectionBlock{
- display: grid;
- grid-template-columns: repeat(2,1fr);   
-margin-top: 48px;
-}
-.backGround{
-   width: 590px;
-   height: 548px; 
-   margin-left: -200px;
-   background-color: #F1DDC9;
-   position: relative;
-}
-.watchBox{
-    left: 200px;
-    position: absolute;
-    width: 554px;
-    height: 481px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+.contact2 h1{
+  color: white;
 
+  border: none;
+  font-family: Taviraj;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 41px;
+  /* identical to box height */
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+.numAdres{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 162px;
+  width: 97px;
+}
+.numAdres h3{    
+  font-family: Taviraj;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  /* or 140% */
+  letter-spacing: 0.02em;
+  color: #FFFFFF
+}
+.numbers{
+  width: 122px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.numbers span{
+  font-family: Taviraj;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+.cont2Box{
+  width: 252px;
+  height: 159px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.networksPic{
+  width: 203px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+.contact3{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 241px;
+  width: 185px;
+}
+.contact3 h1{
+  color: white;
+  border: none;
+  border: none;
+  font-family: Taviraj;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 41px;
+  /* identical to box height */
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
 
-.watches{
-    height: 481px;
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 }
-.productWatch{
-    z-index: 10;
+.linkBox{
+  width: 185px;
+  height: 224px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
 }
-
-@font-face{
-    font-family: "Taviraj";
-    src: url(/home/nikita/Project1/Front/fonts/Taviraj-Regular.ttf);
-    font-weight: 500;
-    font-style: normal;
+.linkBox a{
+  font-family: Taviraj;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  /* or 200% */
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
 }
+.contact4{
+  width:167px ;
+  height: 241px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.contact4 h1{
+  border: none;
+  font-family: Taviraj;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 41px;
+  /* identical to box height */
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+.campaignBox{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 167px;
+  width: 224px;
+}
+.campaignBox a{
+  color: white;
+  font-family: Taviraj;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  /* or 200% */
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+@font-face {
+  font-family: "Taviraj";
+  src: url(/home/nikita/Project1/Front/fonts/Taviraj-Regular.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Taviraj:wght@400;500;600&display=swap');
